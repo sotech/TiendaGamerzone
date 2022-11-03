@@ -1,0 +1,131 @@
+.Navbar {
+    padding: .5rem;
+    margin: 0.5;
+    background-color: var(--color4);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fixed {
+    top: 0vh;
+    position: sticky;
+    width: 100%;
+}
+
+.barraDeNavegacion{
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+
+.TituloPagina{
+    font-weight: 400;
+    color: var(--color2);
+    padding-left: 1rem;
+}
+
+h1 span {
+    font-weight: bold;
+}
+
+
+
+a{
+    color: var(--color2);
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+.link{
+    margin: 2px 10px;
+    padding: 10px;
+    background-color: var(--color4);
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.link:hover{
+    background-color: var(--color2);
+    color: var(--color4);
+}
+.link.active {
+    width: 100%;
+    display: block;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 30%;
+    left: 0;
+    right: 0%;
+    text-align: center;
+    color: white; 
+}
+
+.links.active a {
+    margin-top: 1rem;
+    color: white;
+    font-size: 2rem;
+    display: block;
+}
+
+.BgDiv {
+    position: absolute;
+    background-color: #222;
+    top: -1000px;
+    left: -1000px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: all .6s ease;
+}
+
+.BgDiv.active {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0 0 50% 0;
+    z-index: -1;
+}
+
+.imagenCarrito {
+    background-color: white;
+    border-radius: 25%;
+    width: 2.5rem;
+    height: auto;
+}
+
+.itemTotal {
+    color: white;
+    background-color:black;
+    border-radius: 100%;
+}
+
+.TituloNavBar{
+    color: var(--color4);
+    font-size: 1.8rem;
+    background-image: radial-gradient(circle at -1.09% 26.18%, #e7f086 0, #ebe374 12.5%, #eed662 25%, #f0c64f 37.5%, #f2b53c 50%, #f4a32b 62.5%, #f69120 75%, #f87f1d 87.5%, #fb6c20 100%);
+    border: 5px white;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*
+@media(min-width:768px) {
+    .burguer {
+        display: none;
+    }
+    .links{
+        position: initial;
+        margin: 0;
+    }
+    .links a {
+        font-size: 1rem;
+        color: #333;
+        display: inline;
+    }
+}
+*/
